@@ -1,1 +1,277 @@
 
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Prompt-Agnostic Adversarial Perturbation for Customized Diffusion Models.">
+  <meta name="keywords" content="PAP">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Prompt-Agnostic Adversarial Perturbation for Customized Diffusion Models</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+      </div>
+
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Prompt-Agnostic Adversarial Perturbation for Customized Diffusion Models.</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=zFi57pEAAAAJ&hl=zh-CN&oi=sra">Cong Wan</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://scholar.google.com.hk/citations?user=9VCIiVcAAAAJ&hl=zh-CN">Yuhang He</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://scholar.google.com.hk/citations?hl=zh-CN&user=DnNdGckAAAAJ">Xiang Song</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://scholar.google.com.hk/citations?user=x2xdU7gAAAAJ&hl=zh-CN">Yihong Gong</a><sup>1</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>University of Xian Jiaotong</span>
+  
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2408.10571v1"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+<br>
+<br>
+<br>
+ <img src="./static/images/fig1.2.png" alt="Figure" style="max-width: 100%; height: auto;">
+                           
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+Diffusion models have revolutionized customized text-to-image generation, allowing for efficient synthesis of photos from personal data with textual descriptions. However, these advancements bring forth risks including privacy breaches and unauthorized replication of artworks. 
+Previous researches primarily center around using prompt-specific methods to generate adversarial examples to protect personal images, yet the effectiveness of existing methods is hindered by constrained adaptability to different prompts. 
+          </p>
+<p>
+In this paper, we introduce a Prompt-Agnostic Adversarial Perturbation (PAP) method for customized diffusion models. PAP first models the prompt distribution using a Laplace Approximation, and then produces prompt-agnostic perturbations by maximizing a disturbance expectation based on the modeled distribution. This approach effectively tackles the prompt-agnostic attacks, leading to improved defense stability. Extensive experiments in face privacy and artistic style protection, demonstrate the superior generalization of our method in comparison to existing techniques.
+</p>
+
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+        <br/>
+  
+
+     </div>
+</section>
+
+
+
+<br>
+<br>
+<br>
+    <!-- Motivations: Prompt-agnostic Scenario -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+  <div class="container is-max-desktop">
+<div class="columns is-centered">
+<div class="column">
+<div class="content">
+<h2 class="title is-3"> Motivations: Prompt-agnostic Scenario</h2>
+
+<p>
+Diffusion models have enabled remarkable progress in text-to-image synthesis, image editing, and other generative tasks. However, their abuse raises concerns over portrait tampering and copyright infringement.</p>
+
+<img src="./static/images/fig2.2.png" alt="Figure" style="max-width: 100%; height: auto;">
+
+<p>
+ Existing methods attempt to defend against such abuse by adding prompt-specific adversarial perturbations to images, but these methods are futile against unseen prompts.</p>
+
+<p>We propose a novel Prompt-Agnostic Adversarial Perturbation (PAP) method. Instead of enumerating prompts, PAP models the prompt distribution as a Gaussian in the text-image embedding space using Laplace approximation. It then generates prompt-agnostic perturbations by maximizing a disturbance expectation through sampling from this distribution.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</section>
+
+<br>
+<br>
+<br>
+ <!-- alg -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+  <div class="container is-max-desktop">
+<div class="columns is-centered">
+<div class="column">
+<div class="content">
+<h2 class="title is-3">Method</h2>
+
+We attempt to compute a prompt-agnostic perturbation by prompt distribution modeling, where the obtained perturbation is robust to both seen and unseen attack prompts.
+
+<p>To this end, we first model and compute a prompt distribution by Laplace approximation, wherein two estimators are developed to compute the distribution parameters. We then perform Monte Carlo sampling on each input distribution to maximize a disturbance expectation. The specific algorithm is shown below:</p>
+
+<img src="./static/images/alg.png" alt="Figure" style="max-width: 100%; height: auto;">
+
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+
+
+
+
+
+
+<br>
+<br>
+<br>
+    <!-- illu -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+  <div class="container is-max-desktop">
+<div class="columns is-centered">
+<div class="column">
+<div class="content">
+<h2 class="title is-3">Evaluation</h2>
+
+<p>Comprehensive experiments on VGGFace2, Celeb-HQ, and Wikiart datasets demonstrate PAP's significant and consistent outperformance over prompt-specific methods. Moreover, PAP exhibits robust effectiveness against different diffusion models, unseen prompts, and diverse datasets, showcasing its efficiency and superiority.</p>
+
+<embed src="./static/images/view.pdf" type="application/pdf" width="100%" height="600px" />
+
+
+<h3 class="title is-4">More results</h3>
+
+<embed src="./static/images/appendix_fig_1.pdf" type="application/pdf" width="100%" height="600px" />
+
+<embed src="./static/images/appendix_fig_5.pdf" type="application/pdf" width="100%" height="600px" />
+
+<embed src="./static/images/appendix_fig_8.pdf" type="application/pdf" width="100%" height="600px" />
+
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+      </div>
+    </div>
+   </section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{wan2024prompt,
+  title={Prompt-Agnostic Adversarial Perturbation for Customized Diffusion Models},
+  author={Wan, Cong and He, Yuhang and Song, Xiang and Gong, Yihong},
+  journal={arXiv preprint arXiv:2408.10571},
+  year={2024},
+}</code></pre>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+    
+          <p>
+We would like to acknowledge that the template for this website is borrowed from <a href="https://github.com/nerfies/nerfies.github.io">nerfies.github.io</a>. We appreciate their sharing and open-source contribution.
+          </p>
+      <p>
+            For more details, please refer to our paper or contact us at wancong@stu.xjtu.edu.cn.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
